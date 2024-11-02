@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="To-Do Application">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./image/To-do-page.PNG">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="Save and organise your tasks for efficient management and prioritization">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site name" content="To-Do Application">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <title>To Do Application</title>
+</head>
+
+<body>
+  <div class="header">
+    <img src="./image/To-do-3.png" alt="Notepad">
+
+    <h1>To-do List</h1>
+  </div>
+
+  <!-- To-Do FORM -->
+  <form action="#" class="todo-form" id="todo-form">
+    <input type="text" id="todo-input" placeholder="Enter your todo">
+
+    <br>
+    <button type="submit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19" />
+        <line x1="5" y1="12" x2="19" y2="12" />
+      </svg> Add Task
+    </button>
+  </form>
+
+  <!-- TODO FILTER INPUT -->
+  <input type="text" placeholder="Filter Items" id="filter">
+
+
+  <!-- TO DO LIST -->
+  <ul class="todo-list" id="todo-list">
+    <!-- <li>
+      Write Codes
+      <button class="remove-text style-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </li>
+
+    <li>
+      Pray & Study the Bible
+      <button class="remove-text style-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </li>
+
+    <li>
+      Play football
+      <button class="remove-text style-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </li>
+
+    <li>
+      Read my books
+      <button class="remove-text style-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </li> -->
+  </ul>
+
+  <button class="clear-btn" id="clear-btn">Clear All</button>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

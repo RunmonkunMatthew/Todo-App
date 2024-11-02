@@ -1,0 +1,963 @@
+body {
+  background-color: whitesmoke;
+  margin: auto;
+  width: 90%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 2em 0 0 23.5em;
+}
+
+.header img {
+  width: 9em;
+  height: 7em;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #000;
+  margin-left: 6px;
+}
+
+.todo-form {
+  width: 55%;
+  margin: auto 25em;
+  line-height: 3;
+}
+
+.todo-form input {
+  padding: 12px;
+  width: 55%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.todo-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 1px 8px 1px;
+  width: 8em;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 0.9em;
+  outline: none;
+}
+
+.todo-form button svg {
+  fill: #fff;
+  color: #fff;
+  position: relative;
+  top: 3.5px;
+  left: -1px;
+}
+
+#filter {
+  background-color: transparent;
+  width: 30.5%;
+  margin: 0.5em 25em;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 38%;
+  margin: 1em 20.5em;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 10.5em;
+  margin: 7px -5px;
+  overflow: hidden;
+}
+
+li .animation {
+  animation: fade-in 3s ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    width: 9.5em;
+  }
+
+  50% {
+    opacity: 0.5;
+    width: 10em;
+  }
+
+  100% {
+    opacity: 1;
+    width: 10.5em;
+  }
+}
+
+ul li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 10px;
+}
+
+.style-text {
+  color: red;
+}
+
+.edit-mode {
+  color: #ccc;
+}
+
+.clear-btn {
+  width: 33.2%;
+  padding: 6px;
+  margin: 0.4em 25em;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MDIAQUERIES */
+@media (max-width: 1350px) {
+  body {
+    width: 90%;
+  }
+
+  .header {
+    margin: 2em 0 2em 21.3em;
+  }
+
+  .todo-form {
+    width: 50%;
+  }
+
+  .todo-form input {
+    width: 68%;
+  }
+
+  #filter {
+    width: 34.5%;
+  }
+
+  ul {
+    width: 39%;
+    margin: 1em 21.2em;
+  }
+
+  ul li {
+    width: 12em;
+  }
+
+  .clear-btn {
+    width: 35.9%;
+  }
+}
+
+@media (max-width: 1275px) {
+  .todo-form {
+    width: 50%;
+    margin: auto 24.5em;
+  }
+
+  .todo-form input {
+    width: 69%;
+  }
+
+  #filter {
+    width: 35.5%;
+    margin: 0.5em 24.5em
+  }
+
+  .clear-btn {
+    width: 37.9%;
+    margin: 0.4em 24em;
+  }
+}
+
+@media (max-width: 1225px) {
+  .header {
+    margin: 2em 0 2em 22.3em;
+  }
+
+  ul li {
+    width: 11em;
+  }
+}
+
+@media (max-width: 1140px) {
+  body {
+    width: 80%;
+  }
+
+  .todo-form {
+    width: 80%;
+    margin: auto 24.3em;
+  }
+
+  .todo-form input {
+    width: 54%;
+  }
+
+  .todo-form button {
+    margin: 10px 2px;
+  }
+
+  #filter {
+    width: 43.5%;
+  }
+
+  ul {
+    width: 50%;
+    margin: 1em 20.8em;
+  }
+
+  ul li {
+    width: 11em;
+    margin: 7px 4px;
+  }
+
+  .clear-btn {
+    width: 46%;
+    margin: 0.4em 24.5em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .clear-btn {
+    width: 47.5%;
+    margin: 0.4em 24em;
+  }
+}
+
+@media (max-width: 1070px) {
+  body {
+    margin: 0 -2em;
+  }
+
+  .todo-form {
+    margin: auto 23.3em;
+  }
+
+  .todo-form input {
+    width: 56%;
+  }
+
+  #filter {
+    width: 45%;
+    margin: 0.5em 23.5em;
+  }
+
+  ul {
+    width: 50%;
+    margin: 1em 20.3em;
+  }
+
+  .clear-btn {
+    width: 48%;
+    margin: 0.4em 23.2em;
+  }
+}
+
+@media (max-width: 1029px) {
+  .todo-form {
+    margin: auto 22.6em;
+  }
+
+  .todo-form input {
+    width: 60.5%;
+  }
+
+  #filter {
+    width: 48.6%;
+    margin: 0.5em 22.8em;
+  }
+
+  ul {
+    width: 60%;
+    margin: 1em 18em;
+  }
+
+  ul li {
+    margin: 7px -6px;
+  }
+
+  .clear-btn {
+    width: 52%;
+    margin: 0.4em 22.6em;
+  }
+}
+
+@media (max-width: 995px) {
+  .header {
+    margin: 3em 0 2em 21.3em;
+  }
+
+  ul li {
+    margin: 7px -16px;
+  }
+
+  .clear-btn {
+    width: 52%;
+    margin: 0.4em 22.6em;
+  }
+}
+
+@media (max-width: 955px) {
+  .todo-form {
+    margin: auto 22.3em;
+  }
+
+  .todo-form input {
+    width: 61.5%;
+  }
+
+  #filter {
+    width: 49.8%;
+    margin: 0.5em 22.3em;
+  }
+
+  .clear-btn {
+    width: 53.2%;
+    margin: 0.4em 22em;
+  }
+}
+
+@media (max-width: 922px) {
+  .header {
+    margin: 3em 0 2em 20.5em;
+  }
+
+  .todo-form {
+    margin: auto 22em;
+  }
+}
+
+@media (max-width: 912px) {
+  .clear-btn {
+    width: 54.9%;
+    margin: 0.4em 21.6em;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: -1em -5em;
+  }
+
+  .header h1 {
+    font-size: 2.6em;
+    margin-top: 36px;
+    margin-left: 6px;
+  }
+
+  #filter {
+    margin: 0.5em 22.2em;
+  }
+
+  ul li {
+    width: 10em;
+    margin: 7px -16px;
+  }
+}
+
+@media (max-width: 840px) {
+  body {
+    margin: -1em -7em;
+  }
+
+  .todo-form {
+    margin: auto 21.9em;
+  }
+
+  .todo-form input {
+    width: 63.5%;
+  }
+
+  ul {
+    width: 63%;
+    margin: 1em 18em;
+  }
+
+  #filter {
+    width: 51.4%;
+    margin: 0.5em 22.2em;
+  }
+
+  .clear-btn {
+    width: 56.5%;
+    margin: 0.2em 21.8em;
+  }
+}
+
+@media (max-width: 825px) {
+  .header {
+    width: 52%;
+    margin: 3em 0 2em 19.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: -1em -9em;
+  }
+
+  .header img {
+    width: 8em;
+    height: 6em;
+  }
+
+  .header h1 {
+    margin-top: 20px;
+  }
+
+  .todo-form {
+    width: 85%;
+    margin: auto 21.6em;
+  }
+
+  .todo-form input {
+    width: 65.5%;
+    padding: 11px;
+  }
+
+  #filter {
+    width: 55%;
+    margin: 0.5em 21.9em;
+  }
+
+  ul {
+    width: 68%;
+    margin: 1em 17.4em;
+  }
+
+  ul li {
+    padding: 9px;
+  }
+
+  .clear-btn {
+    width: 58.5%;
+    margin: -0.3em 21.8em;
+  }
+}
+
+@media (max-width: 760px) {
+  .todo-form {
+    width: 86%;
+    margin: auto 21.1em;
+  }
+
+  .todo-form input {
+    width: 67%;
+    padding: 11px;
+  }
+
+  #filter {
+    width: 56.6%;
+    margin: 0.5em 21.5em;
+  }
+
+  .clear-btn {
+    width: 60.5%;
+    margin: -0.3em 21.4em;
+  }
+}
+
+@media (max-width: 755px) {
+  .header {
+    width: 58%;
+    margin: 3em 0 2em 19.8em;
+  }
+}
+
+@media (max-width: 730px) {
+  .todo-form {
+    width: 88%;
+    margin: auto 20.6em;
+  }
+
+  .todo-form input {
+    width: 68.5%;
+    padding: 11px;
+  }
+
+  #filter {
+    width: 60%;
+    margin: 0.5em 20.8em;
+  }
+
+  ul {
+    width: 75%;
+    margin: 1em 16.2em;
+  }
+
+  .clear-btn {
+    width: 65%;
+    margin: -0.3em 20.6em;
+  }
+}
+
+@media (max-width: 690px) {
+  body {
+    margin: -1em -10em;
+  }
+
+  .header {
+    width: 65%;
+    margin: 3em 0 2em 19.8em;
+  }
+
+  .todo-form {
+    width: 90%;
+    margin: auto 20.2em;
+  }
+
+  .todo-form input {
+    width: 71%;
+    padding: 11px;
+  }
+
+  #filter {
+    width: 63.5%;
+    margin: 0.5em 20.4em;
+  }
+
+  ul {
+    width: 78%;
+    margin: 1em 16em;
+  }
+
+  .clear-btn {
+    width: 68%;
+    margin: -0.3em 20.2em;
+  }
+}
+
+@media (max-width: 645px) {
+  body {
+    margin: -1em -12em;
+  }
+
+  .header {
+    margin: 3em 0 2em 19.5em;
+  }
+
+  .todo-form {
+    width: 90%;
+    margin: auto 19.6em;
+  }
+
+  .todo-form input {
+    width: 75%;
+  }
+
+  ul {
+    width: 82%;
+    margin: 1em 15.5em;
+  }
+
+  #filter {
+    width: 67%;
+    margin: 0.5em 19.8em;
+  }
+
+  .clear-btn {
+    width: 72%;
+    margin: -0.3em 19.6em;
+  }
+}
+
+@media (max-width: 610px) {
+  .header {
+    width: 80%;
+    margin: 3em 0 2em 18em;
+  }
+
+  .todo-form {
+    width: 90%;
+    margin: auto 18.9em;
+  }
+
+  .todo-form input {
+    width: 79.5%;
+  }
+
+  #filter {
+    width: 71.2%;
+    margin: 0.5em 18.9em;
+  }
+
+  ul {
+    width: 88%;
+    margin: 1em 14.5em;
+  }
+
+  .clear-btn {
+    width: 76%;
+    margin: -0.3em 18.8em;
+  }
+}
+
+@media (max-width: 585px) {
+  .header {
+    width: 80%;
+    margin: 3em 0 2em 17em;
+  }
+
+  .todo-form {
+    width: 94%;
+    margin: auto 18.2em;
+  }
+
+  #filter {
+    width: 73.5%;
+    margin: 0.5em 18.5em;
+  }
+
+  ul {
+    width: 90%;
+    margin: 1em 14.3em;
+  }
+
+  .clear-btn {
+    width: 79%;
+    margin: -0.3em 18.4em;
+  }
+}
+
+@media (max-width: 565px) {
+  ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1em 16.2em;
+  }
+
+  ul li {
+    width: 21em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 79.2%;
+    margin: -0.3em 18.4em;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    width: 80%;
+    margin: 3em 0 2em 16.4em;
+  }
+
+  .header img {
+    width: 7.5em;
+    height: 6em;
+  }
+
+  .todo-form {
+    width: 94%;
+    margin: auto 18em;
+  }
+
+  #filter {
+    width: 73.5%;
+    margin: 0.5em 18.3em;
+  }
+
+  ul {
+    margin: 1em 16em;
+  }
+
+  ul li {
+    width: 20.2em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 79.4%;
+    margin: -0.3em 18.2em;
+  }
+}
+
+@media (max-width: 520px) {
+  ul {
+    margin: 1em 15.8em;
+  }
+
+  ul li {
+    width: 19.6em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 80%;
+    margin: -0.3em 18em;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: -1em -13em;
+  }
+
+  .header img {
+    width: 7em;
+    height: 5.6em;
+  }
+
+  ul {
+    margin: 1em 16em;
+  }
+
+  ul li {
+    width: 18.8em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 82%;
+    margin: -0.3em 18em;
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    width: 80%;
+    margin: 3em 0 2em 16.8em;
+  }
+
+  .header h1 {
+    font-size: 2.4em;
+    margin-top: 23px;
+  }
+
+  ul li {
+    width: 17.7em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: -1em -14.3em;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .todo-form input {
+    width: 83%;
+  }
+
+  #filter {
+    width: 77%;
+  }
+
+  ul {
+    margin: 1em 15.9em;
+  }
+
+  ul li {
+    width: 17.8em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 85%;
+    margin: -0.3em 18.1em;
+  }
+}
+
+@media (max-width: 430px) {
+  .todo-form input {
+    width: 86%;
+  }
+
+  #filter {
+    width: 80.5%;
+  }
+
+  .clear-btn {
+    width: 89%;
+    margin: -0.3em 18.1em;
+  }
+}
+
+@media (max-width: 415px) {
+  body {
+    margin: -1em -15em;
+  }
+
+  .todo-form input {
+    width: 90%;
+  }
+
+  #filter {
+    width: 84%;
+  }
+
+  .clear-btn {
+    width: 92.5%;
+  }
+}
+
+@media (max-width: 395px) {
+  body {
+    margin: -1em -15.8em;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header img {
+    width: 7em;
+    height: 5.4em;
+  }
+
+  .todo-form {
+    width: 98%;
+    margin: auto 18em;
+  }
+
+  #filter {
+    width: 88%;
+  }
+
+  .clear-btn {
+    width: 97%;
+  }
+}
+
+@media (max-width: 380px) {
+  ul li {
+    width: 17.2em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 370px) {
+  ul li {
+    width: 16.7em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header h1 {
+    font-size: 2.2em;
+    margin-top: 23px;
+  }
+
+  ul li {
+    width: 16.2em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 350px) {
+  ul li {
+    width: 15.8em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header h1 {
+    font-size: 2em;
+    margin-top: 28px;
+  }
+
+  ul li {
+    width: 15.3em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 330px) {
+  ul li {
+    width: 14.9em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 98%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header h1 {
+    font-size: 1.8em;
+    margin-top: 28px;
+  }
+
+  .header img {
+    width: 6em;
+    height: 5.2em;
+  }
+
+  ul li {
+    width: 14.4em;
+    margin: 7px -5px;
+  }
+}
+
+@media (max-width: 310px) {
+  ul li {
+    width: 14em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 99%;
+  }
+}
+
+@media (max-width: 300px) {
+  .todo-form {
+    width: 98%;
+    margin: auto 17.5em;
+  }
+
+  #filter {
+    margin: 0.5em 17.8em;
+  }
+
+  ul {
+    margin: 1em 15.4em;
+  }
+
+  ul li {
+    width: 13.6em;
+    margin: 7px -5px;
+  }
+
+  .clear-btn {
+    width: 99.5%;
+    margin: -0.3em 17.6em;
+  }
+}
