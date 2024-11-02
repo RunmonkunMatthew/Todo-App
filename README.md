@@ -1,4 +1,4 @@
 # Todo-App
-Add, delte and edit daily tasks efficiently 
+add, delete and edit daily tasks efficiently 
 
 Created with ❤️ by Dr Matthew 
