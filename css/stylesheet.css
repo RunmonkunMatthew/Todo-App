@@ -650,7 +650,7 @@ ul li button {
 
 @media (max-width: 565px) {
   ul {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     margin: 1em 16.2em;
   }
