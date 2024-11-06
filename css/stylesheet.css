@@ -22,6 +22,14 @@ body {
   font-weight: 100;
   color: #000;
   margin-left: 6px;
+  overflow: hidden; 
+  white-space: nowrap;
+  animation: typing 2s steps(40, end)
+}
+
+@keyframes typing{
+  from {width: 0;}
+  to {width: 100%;}
 }
 
 .todo-form {
