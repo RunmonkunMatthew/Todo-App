@@ -66,8 +66,6 @@ function addTaskToDom(task) {
 
   const button = createButton('remove-text style-text')
   li.appendChild(button);
-  li.classList.add('animation');
-
 
   //add new todo to the DOM
   todoList.appendChild(li);

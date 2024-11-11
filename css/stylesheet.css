@@ -24,12 +24,6 @@ body {
   margin-left: 6px;
   overflow: hidden; 
   white-space: nowrap;
-  animation: typing 2s steps(40, end)
-}
-
-@keyframes typing{
-  from {width: 0;}
-  to {width: 100%;}
 }
 
 .todo-form {
@@ -97,27 +91,6 @@ ul li {
   width: 10.5em;
   margin: 7px -5px;
   overflow: hidden;
-}
-
-li .animation {
-  animation: fade-in 3s ease;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    width: 9.5em;
-  }
-
-  50% {
-    opacity: 0.5;
-    width: 10em;
-  }
-
-  100% {
-    opacity: 1;
-    width: 10.5em;
-  }
 }
 
 ul li button {
